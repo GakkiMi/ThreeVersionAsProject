@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorGray">#cdcdcd</color>
+    <color name="colorRed">#ff0000</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLightWhite">#80FFFFFF</color>
+    <color name="colorPink">#FF4081</color>
+    <color name="colorYellow">#ffFFEB3B</color>
+    <color name="colorKhika">#c08c34</color>
+    <color name="colorDatePress">#06be94</color>
+    <color name="colorWelcome">#6dcef7</color>
+    <color name="colorBlack">#000000</color>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyView">
+        <attr name="defaultSize" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ClockView">
+        <attr name="clock_outArcColor" format="color" /><!--外接弧颜色-->
+        <attr name="clock_hourNeedletColor" format="color" /><!--时针颜色-->
+        <attr name="clock_minuteNeedletColor" format="color" /><!--分针颜色-->
+        <attr name="clock_secondNeedletColor" format="color" /><!--秒针颜色-->
+        <attr name="clock_textColor" format="color" /><!--字体颜色-->
+        <attr name="clock_lineColor" format="color" /><!--刻度线颜色-->
+        <attr name="clock_textSize" format="dimension" /><!--字体大小-->
+    </declare-styleable>
+
+
+    <declare-styleable name="ShapeTextView">
+        <!--圆角-->
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="topLeftCornerRadius" format="dimension" />
+        <attr name="topRightCornerRadius" format="dimension" />
+        <attr name="bottomLeftCornerRadius" format="dimension" />
+        <attr name="bottomRightCornerRadius" format="dimension" />
+
+
+        <!--正常情况下的背景颜色-->
+        <attr name="NormalBgColor" format="color" />
+        <!--按下情况下的背景颜色-->
+        <attr name="PressBgColor" format="color" />
+        <!--正常情况下的文字颜色-->
+        <attr name="NormalTextColor" format="color" />
+        <!--按下情况下的文字颜色-->
+        <attr name="PressTextColor" format="color" />
+
+        <!--描边线的正常颜色-->
+        <attr name="StrokeNormalColor" format="color" />
+        <!--描边线的按压颜色-->
+        <attr name="StrokePressColor" format="color" />
+        <!--描边线的宽度-->
+        <attr name="StrokeWidth" format="dimension" />
+
+        <!--虚线的间隙-->
+        <attr name="dashGap" format="dimension"></attr>
+        <!--虚线的宽度-->
+        <attr name="dashWidth" format="dimension"></attr>
+
+
+
+        <attr name="shapeType" format="enum">
+            <enum name="rectangle" value="0"/>
+            <enum name="oval" value="1"/>
+            <enum name="line" value="2"/>
+            <enum name="ring" value="3"/>
+        </attr>
+
+        <!-- &lt;!&ndash;禁用状态下的背景颜色&ndash;&gt;
+         <attr name="DisableBackgroundColor" format="color" />
+         &lt;!&ndash;选中状态下背景颜色&ndash;&gt;
+         <attr name="SelectedBackgroundColor" format="color" />
+         &lt;!&ndash;禁用状态下的文字颜色&ndash;&gt;
+         <attr name="DisableTextColor" format="color" />
+         &lt;!&ndash;选中状态下文字颜色&ndash;&gt;
+         <attr name="SelectedTextColor" format="color" />-->
+    </declare-styleable>
+
+
+    <declare-styleable name="CustumBgTextView">
+        <!--填充色-->
+        <attr name="solidColor" format="color"></attr>
+        <!--边框色-->
+        <attr name="strokeColor" format="color"></attr>
+        <!--按下填充色-->
+        <attr name="solidTouchColor" format="color"></attr>
+        <!---按下边框色-->
+        <attr name="strokeTouchColor" format="color"></attr>
+        <!--文字按下颜色 -->
+        <attr name="textTouchColor" format="color"></attr>
+
+        <attr name="strokeWith" format="integer"></attr>
+        <attr name="radius" format="dimension"></attr>
+        <attr name="topLeftRadius" format="dimension"></attr>
+        <attr name="topRightRadius" format="dimension"></attr>
+        <attr name="bottomLeftRadius" format="dimension"></attr>
+        <attr name="bottomRightRadius" format="dimension"></attr>
+
+        <!--虚线的间隙-->
+        <attr name="DashGap" format="dimension"></attr>
+        <!--虚线的宽度-->
+        <attr name="DashWidth" format="dimension"></attr>
+
+
+        <attr name="shapeTpe" format="enum">
+            <enum name="rectangle" value="0"></enum>
+            <enum name="oval" value="1"></enum>
+            <enum name="line" value="2"></enum>
+            <enum name="ring" value="3"></enum>
+        </attr>
+
+    </declare-styleable>
+
+</resources>

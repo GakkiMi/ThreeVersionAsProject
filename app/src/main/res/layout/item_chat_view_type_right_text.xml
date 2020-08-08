@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_chat_view_type_text_rl_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="7dp"
+    android:paddingRight="10dp"
+    android:layout_marginTop="7dp">
+
+    <TextView
+        android:id="@+id/item_chat_view_type_text_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:text="昨天 19：43"
+        android:layout_marginBottom="10dp"
+        android:textSize="11sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_chat_view_type_text_tv_time">
+
+        <ImageView
+            android:id="@+id/item_chat_view_type_text_iv"
+            android:layout_width="4dp"
+            android:layout_height="7.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_chat_blue_arrow" />
+
+
+        <com.example.threeversionasproject.widget.ShapeTextView
+            android:id="@+id/item_chat_view_type_text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/item_chat_view_type_text_iv"
+            android:lineSpacingExtra="2dp"
+            android:maxWidth="300dp"
+            android:padding="7dp"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            app:NormalBgColor="#488EFE"
+            app:cornerRadius="5dp"
+            app:shapeType="rectangle" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.threeversionasproject.envntdispatch.EventDispatchActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/jiami"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加密"/>
+        <Button
+            android:id="@+id/jiemi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="解密"/>
+    </LinearLayout>
+
+
+  <!--  <com.example.threeversionasproject.envntdispatch.EvnetGroupA
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorGray">
+
+        <com.example.threeversionasproject.envntdispatch.EventViewA
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorAccent"/>
+
+
+
+        <com.example.threeversionasproject.envntdispatch.EvnetGroupB
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="100dp"
+            android:background="@color/colorPrimary">
+
+            <com.example.threeversionasproject.envntdispatch.EventViewB
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@color/colorAccent"/>
+
+
+
+        </com.example.threeversionasproject.envntdispatch.EvnetGroupB>
+
+
+    </com.example.threeversionasproject.envntdispatch.EvnetGroupA>-->
+
+</LinearLayout>

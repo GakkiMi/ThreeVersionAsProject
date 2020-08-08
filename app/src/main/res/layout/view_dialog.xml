@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.example.threeversionasproject.fragment.PhotoViewPager
+        android:id="@+id/view_dialog_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/view_dialog_tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        android:clickable="true"
+        android:layout_margin="20dp"
+        android:text="关闭"/>
+
+
+    <TextView
+        android:id="@+id/view_dialog_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="50dp"
+        android:text=""/>
+
+</FrameLayout>

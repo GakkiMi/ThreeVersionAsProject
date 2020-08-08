@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:haha="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.threeversionasproject.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/main_framlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGray" />
+
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <com.example.threeversionasproject.widget.MyViewGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGray">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="button1" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="button2" />
+
+
+        </com.example.threeversionasproject.widget.MyViewGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.example.threeversionasproject.widget.MyView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@color/colorGray" />
+
+            <com.example.threeversionasproject.widget.MiClockView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                app:clock_hourNeedletColor="@color/colorWhite"
+                app:clock_lineColor="@color/colorPrimary"
+                app:clock_minuteNeedletColor="@color/colorLightWhite"
+                app:clock_outArcColor="@color/colorLightWhite"
+                app:clock_secondNeedletColor="@color/colorWhite"
+                app:clock_textColor="@color/colorLightWhite"
+                app:clock_textSize="14sp" />
+
+
+            <com.example.threeversionasproject.widget.MatrixView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@color/colorDatePress"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.example.threeversionasproject.widget.DownloadSuccessView
+                android:id="@+id/main_ds_view"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@color/colorKhika" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+
+            <com.example.threeversionasproject.widget.ShapeTextView
+                android:id="@+id/main_shape_tv"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layerType="software"
+                android:padding="5dp"
+                android:text="渣渣辉辉渣渣我是辉我是渣渣我是渣渣辉辉"
+                app:NormalBgColor="@color/colorWhite"
+                app:NormalTextColor="@color/colorGray"
+                app:PressBgColor="@color/colorDatePress"
+                app:PressTextColor="@color/colorWhite"
+                app:StrokeNormalColor="@color/colorBlack"
+                app:StrokeWidth="1dp"
+                app:bottomRightCornerRadius="10dp"
+                app:dashGap="8dp"
+                app:dashWidth="18dp"
+                app:topLeftCornerRadius="10dp" />
+
+
+        </LinearLayout>
+
+
+        <com.example.threeversionasproject.widget.ShapeTextView
+            android:id="@+id/main_shape_tv_line"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layerType="software"
+            android:text="sdfadf"
+            app:NormalTextColor="@color/colorPrimary"
+            app:PressTextColor="@color/colorBlack"
+            app:StrokeNormalColor="@color/colorBlack"
+            app:StrokePressColor="@color/colorPrimary"
+            app:StrokeWidth="1dp"
+            app:shapeType="line"
+            app:dashGap="8dp"
+            app:dashWidth="18dp"
+             />
+
+        <Button
+            android:id="@+id/bt_scroll_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="循环滚动TextView"/>
+
+    </LinearLayout>
+
+    <!--
+     app:NormalBgColor="@color/colorDatePress"
+    app:PressBgColor="@color/colorWelcome"
+    app:NormalTextColor="@color/colorBlack"
+    app:PressTextColor="@color/colorWhite"
+
+
+
+    -->
+
+
+    <!--<com.example.threeversionasproject.widget.CustumShapeBgTextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="rectangleeeeeeee"
+        app:radius="7dp"
+        app:solidColor="#5555ff"
+        app:strokeColor="#000000"
+        app:strokeWith="1"
+
+        />
+
+    <com.example.threeversionasproject.widget.CustumShapeBgTextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="椭圆Oval"
+        app:radius="7dp"
+        app:shapeTpe="oval"
+        app:solidColor="#5555ff"
+        app:strokeColor="#000000"
+        app:strokeWith="1"
+        app:textTouchColor="#ffffff" />
+
+    <com.example.threeversionasproject.widget.CustumShapeBgTextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="矩形"
+        android:textColor="#000000"
+        app:bottomLeftRadius="25dp"
+        app:dashGap="2dp"
+        app:dashWidth="3dp"
+        app:shapeTpe="rectangle"
+        app:solidTouchColor="#ff5555"
+        app:strokeColor="#ff0000"
+        app:strokeTouchColor="#000000"
+        app:strokeWith="1"
+        app:textTouchColor="#ffffff"
+        app:topRightRadius="25dp" />
+
+    <com.example.threeversionasproject.widget.CustumShapeBgTextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layerType="software"
+        android:text="line"
+        android:textColor="#ff0000"
+        app:bottomLeftRadius="25dp"
+        app:dashGap="2dp"
+        app:dashWidth="3dp"
+        app:shapeTpe="line"
+        app:solidTouchColor="#ff5555"
+        app:strokeColor="#ff0000"
+        app:strokeTouchColor="#000000"
+        app:strokeWith="1"
+        app:textTouchColor="#000"
+        app:topRightRadius="25dp" />
+
+    <com.example.threeversionasproject.widget.CustumShapeBgTextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="ring"
+        android:textColor="#ff0000"
+        app:bottomLeftRadius="25dp"
+        app:dashGap="2dp"
+        app:dashWidth="3dp"
+        app:shapeTpe="ring"
+        app:solidTouchColor="#ff5555"
+        app:strokeColor="#ff0000"
+        app:strokeTouchColor="#000000"
+        app:strokeWith="5"
+        app:textTouchColor="#000"
+        app:topRightRadius="25dp" />-->
+
+
+</LinearLayout>

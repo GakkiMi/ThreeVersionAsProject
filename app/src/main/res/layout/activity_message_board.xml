@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f8f9">
+
+
+    <RelativeLayout
+        android:id="@+id/message_board_rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/message_board_rl_bottom_chat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="7dp"
+                android:background="@color/colorGray" />
+
+
+            <ImageView
+                android:id="@+id/message_board_iv_switch"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/img_chat_voice" />
+
+
+            <ImageView
+                android:id="@+id/message_board_iv_add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@+id/message_board_iv_camera"
+                android:src="@drawable/ic_menu_send" />
+
+            <ImageView
+                android:id="@+id/message_board_iv_camera"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_menu_camera" />
+
+            <Button
+                android:id="@+id/message_board_stv_speak"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@+id/message_board_iv_add"
+                android:layout_toRightOf="@+id/message_board_iv_switch"
+                android:background="@drawable/chat_stv_speak_normal_shape"
+                android:gravity="center"
+                android:text="按住说话"
+                android:textColor="@color/colorPrimary"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/message_board_et_chat"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@+id/message_board_iv_add"
+                android:layout_toRightOf="@+id/message_board_iv_switch"
+                android:background="@drawable/chat_et_shape"
+                android:imeOptions="actionSend"
+                android:inputType="text"
+                android:lineSpacingExtra="1dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingTop="3dp"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/message_board_rl_bottom_other"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_below="@+id/message_board_rl_bottom_chat"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray" />
+
+            <RelativeLayout
+                android:id="@+id/panel_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+
+                android:visibility="gone">
+                <!--第一个面板-->
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:text="第一个面板"
+                    android:layout_centerInParent="true"
+
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/panel_two"
+                android:layout_width="match_parent"
+                android:background="@color/colorAccent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+                <!--第二个面板-->
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:text="第二个面板"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/message_board_rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/message_board_rl_bottom">
+
+        <com.example.threeversionasproject.widget.PointProcessBar
+            android:id="@+id/point_process_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/point_process_bar"
+            android:id="@+id/message_board_rv_list"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+
+    <com.example.threeversionasproject.messageboard.KeyboardLayout
+        android:id="@+id/message_board_keyboard_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/conversation_audio_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/chat_et_shape"
+        android:visibility="gone">
+
+        <Chronometer
+            android:id="@+id/conversation_audio_chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/conversation_audio_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/conversation_audio_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/conversation_audio_tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/conversation_audio_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

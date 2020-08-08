@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:drawable="@drawable/voice_white_volume_one"
+        android:duration="330" />
+    <item
+        android:drawable="@drawable/voice_white_volume_two"
+        android:duration="330" />
+    <item
+        android:drawable="@drawable/voice_white_volume_three"
+        android:duration="330" />
+
+</animation-list>
