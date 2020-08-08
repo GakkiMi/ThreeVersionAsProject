@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gengchao.chat.activity.myscroltextview.scroll.ScrollActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.gengchao.chat.activity.myscroltextview.scroll.ScrollTextView
+            android:id="@+id/scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="120dip"
+            android:background="#ff00ffff"
+            android:lineSpacingExtra="0dip"
+            android:textColor="#fff00fff"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/update_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="文字修改" />
+
+        <TextView
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/update_layout"
+            android:layout_toRightOf="@+id/update_text"
+
+
+            />
+
+        <Button
+            android:id="@+id/update_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="布局方式修改" />
+    </RelativeLayout>
+
+</FrameLayout>
